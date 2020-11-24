@@ -1,7 +1,7 @@
 package com.example.app.repository;
 
 import com.example.app.model.TaskList;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TaskListRepository extends CrudRepository<TaskList, Long> {
+public interface TaskListRepository extends JpaRepository<TaskList, Long> {
 }

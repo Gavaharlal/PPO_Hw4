@@ -35,12 +35,24 @@ public class Task {
         return id;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public boolean isComplete() {
         return complete;
+    }
+
+    public void setComplete(boolean complete) {
+        this.complete = complete;
     }
 
     public TaskList getTaskList() {
@@ -64,3 +76,4 @@ public class Task {
         return Objects.hash(id);
     }
 }
+

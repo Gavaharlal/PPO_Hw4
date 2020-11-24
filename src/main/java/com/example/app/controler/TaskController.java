@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
 
 @Controller
 public class TaskController {
@@ -59,7 +60,7 @@ public class TaskController {
         return "redirect:/";
     }
 
-    private void prepareModel(Model model, Iterable<TaskList> taskList) {
+    private void prepareModel(Model model, List<TaskList> taskList) {
         model.addAttribute("taskLists", taskList);
         model.addAttribute("taskList", new TaskList());
         Task task = new Task();
